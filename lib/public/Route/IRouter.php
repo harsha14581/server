@@ -81,6 +81,15 @@ interface IRouter {
 	public function getCurrentCollection();
 
 	/**
+	 * Returns all collections
+	 *
+	 * @return string the collection name
+	 * @since 21.0.0
+	 * @deprecated 9.0.0
+	 */
+	public function getCollections() : array;
+
+	/**
 	 * Create a \OCP\Route\IRoute.
 	 *
 	 * @param string $name Name of the route to create.
